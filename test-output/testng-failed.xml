@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [ENDCLOTHING-AUTOMATION]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="endclothing.qa.base.TestListener"/>
+    <listener class-name="endclothing.qa.base.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="1" parallel="methods" name="Chrome_Suite(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="endclothing.qa.test.PocTest">
+        <methods>
+          <include name="close"/>
+          <include name="pocTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- endclothing.qa.test.PocTest -->
+    </classes>
+  </test> <!-- Chrome_Suite(failed) -->
+</suite> <!-- Failed suite [ENDCLOTHING-AUTOMATION] -->
